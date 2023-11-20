@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MMA Gym Home</title>
+  </head>
+  <body>
+    <div style="display: flex; justify-content: center">
+      <img style="width: 15%" src="logo2.png" alt="" />
+    </div>
+    <div id="navbar">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="Home.html">Home</a></li>
+
+            <li><a href="About.html">About</a></li>
+            <li><a href="Membership.html">Membership</a></li>
+            <li><a href="Training.html">Training</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <div class="wrapper">
+      <main>
+        <h2>Where to find us:</h2>
+        <p>
+          Welcome to our premier MMA gym, where champions are forged and
+          enthusiasts thrive! Located in the heart of Saint-Lambert, our
+          state-of-the-art facility is easily accessible at 900 Rue Riverside,
+          Saint-Lambert, QC, J4P 3P2. Whether you're a seasoned fighter or a
+          beginner looking to embark on your martial arts journey, our
+          experienced coaches and top-notch training environment are here to
+          elevate your skills to new heights. Join us at The MMA Gym and
+          discover a community passionate about the art of mixed martial arts.
+          Train hard, hone your techniques, and achieve your fitness goals with
+          us. Visit us at Website for more information and class schedules.
+          Unleash your potential at the ultimate MMA destination in Montreal!
+        </p>
+        <div
+          style="
+            display: flex;
+
+            justify-content: center;
+          "
+        >
+          <div
+            id="map"
+            style="width: 70%; height: 400px; border-radius: 30px"
+          ></div>
+        </div>
+        <h2>Social media</h2>
+        <div
+          style="
+            display: flex;
+
+            justify-content: center;
+            gap: 5rem;
+            margin-bottom: 5rem;
+          "
+        >
+          <div>
+            <a href=""
+              ><img
+                src="Instagram_logo_2016.svg.png"
+                alt=""
+                style="width: 100px"
+            /></a>
+            <p style="text-align: center">Instagram</p>
+          </div>
+          <div>
+            <a href=""
+              ><img
+                src="Facebook_f_logo_(2021).svg.png"
+                alt=""
+                style="width: 100px"
+            /></a>
+            <p style="text-align: center">Facebook</p>
+          </div>
+          <div>
+            <a href=""
+              ><img src="Snapchat_logo.svg.png" alt="" style="width: 100px"
+            /></a>
+            <p style="text-align: center">Snapchat</p>
+          </div>
+        </div>
+      </main>
+      <footer><p>&copy; 2023 MMA Gym. All rights reserved.</p></footer>
+    </div>
+  </body>
+  <style>
+    h2 {
+      color: #d2232a;
+
+      text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000,
+        1px 1px 0 #000;
+    }
+    #navbar {
+      overflow: hidden;
+      display: grid;
+      width: 97%;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: white;
+      margin-bottom: 0px;
+      border: solid black;
+      padding: 10px;
+      border-radius: 15px;
+      z-index: 100;
+    }
+    .sticky {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      align-items: center;
+      justify-content: center;
+      background-image: url("abstract-red-splatter-blood-stains-background-design-template-a6f366eb148e75c5aad0503bdd4906fa_screen.jpg");
+    }
+
+    #navbar nav {
+      text-align: center;
+      gap: 1rem;
+    }
+    #navbar nav ul {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      list-style: none;
+      justify-content: center;
+      margin: 0;
+      color: #f4f4f4;
+    }
+    #navbar nav a {
+      text-decoration: none;
+      gap: 1rem;
+      font-weight: bold;
+      color: black;
+      font-size: 18px;
+    }
+    #navbar nav a:hover {
+      color: red;
+    }
+    main {
+      background-color: #1c1c1c;
+      padding: 1.5rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: white;
+      border-radius: 30px;
+      border: solid black;
+    }
+
+    footer {
+      background-color: #1c1c1c;
+      padding: 0.5rem;
+      border: solid black;
+      color: white;
+      border-radius: 30px;
+      text-align: center;
+    }
+
+    @media only screen and (max-width: 300px) {
+      .prev,
+      .next,
+      .text {
+        font-size: 11px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+    }
+  </style>
+
+  <script>
+    window.onscroll = function () {
+      myFunction();
+    };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    function myMap() {
+      var location = { lat: 45.50169, lng: -73.567253 };
+      var map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 10,
+        center: location,
+      });
+      var marker = new google.maps.Marker({
+        Position: { lat: 45.516447, lng: -73.520098 },
+        map: map,
+      });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=&callback=myMap"></script>
+</html>

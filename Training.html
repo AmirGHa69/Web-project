@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MMA Gym Home</title>
+  </head>
+  <body>
+    <div style="display: flex; justify-content: center">
+      <img style="width: 15%" src="logo2.png" alt="" />
+    </div>
+    <div id="navbar">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="Home.html">Home</a></li>
+
+            <li><a href="About.html">About</a></li>
+            <li><a href="Membership.html">Membership</a></li>
+            <li><a href="Training.html">Training</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <div class="wrapper">
+      <main>
+        <p>
+          Welcome to our premier MMA gym, where we pride ourselves on offering a
+          comprehensive and diverse class schedule designed to accommodate
+          individuals of all skill levels and backgrounds. Our carefully curated
+          schedule ensures that you have the flexibility to choose classes that
+          align with both your skill development goals and personal
+          availability. Whether you're a beginner looking to grasp the
+          fundamentals or an experienced fighter seeking to refine specific
+          techniques, our expert instructors are dedicated to guiding you
+          through each step of your martial arts journey.
+        </p>
+        <p>
+          Explore our weekly class offerings, which encompass a range of
+          disciplines, including striking, grappling, and mixed-discipline
+          sessions. Our striking classes focus on developing powerful and
+          precise striking techniques, while our grappling sessions emphasize
+          ground control, submissions, and defensive strategies. Additionally,
+          our mixed-discipline classes provide a holistic approach to MMA,
+          integrating a variety of skills for a well-rounded training
+          experience.
+        </p>
+        <h2 class="titlet">Schedule:</h2>
+        <table style="width: 100%">
+          <tr class="days">
+            <th></th>
+            <th class="Monday1">Monday</th>
+            <th class="Tuesday1">Tuesday</th>
+            <th class="Wednesday1">Wednesday</th>
+            <th class="Thursday1">Thursday</th>
+            <th class="Friday1">Friday</th>
+            <th class="Saturday1">Saturday</th>
+            <th class="Sunday1">Sunday</th>
+          </tr>
+          <tr>
+            <th>8 AM</th>
+            <td class="Monday">Ju-Jitsu</td>
+            <td class="Tuesday">Sparing</td>
+            <td class="Wednesday">Ju-Jitsu</td>
+            <td class="Thursday">Open Mat</td>
+            <td class="Friday">Leg Locks</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>10 AM</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="Saturday">Open Mat</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>12 AM</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>2 PM</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>4 PM</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>6 PM</th>
+            <td class="Monday">Ju-Jitsu</td>
+            <td class="Tuesday">Sparing</td>
+            <td class="Wednesday">Ju-Jitsu</td>
+            <td class="Thursday">Open Mat</td>
+            <td class="Friday">Leg Locks</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>8 PM</th>
+            <td class="Monday">Open Mat</td>
+            <td></td>
+            <td class="Wednesday">Sparing</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+        <p>
+          For those seeking a more personalized approach, we also offer private
+          classes with our experienced instructors. These one-on-one sessions
+          allow you to receive individualized attention, tailored training
+          plans, and constructive feedback to accelerate your progress. Whether
+          you're honing specific techniques or addressing unique challenges, our
+          private classes are designed to meet your specific needs and goals.
+        </p>
+
+        <p style="margin-bottom: 25rem">
+          At our MMA gym, we are committed to fostering a supportive and
+          inclusive community where everyone can thrive. Check out our class
+          schedule, including private class options, and take the first step
+          towards unleashing your full potential in the exciting world of mixed
+          martial arts. Join us on the journey to becoming the best version of
+          yourself, both inside and outside the ring!
+        </p>
+      </main>
+      <footer><p>&copy; 2023 MMA Gym. All rights reserved.</p></footer>
+    </div>
+  </body>
+  <style>
+    .titlet {
+      color: #d2232a;
+
+      text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000,
+        1px 1px 0 #000;
+    }
+    #navbar {
+      overflow: hidden;
+      display: grid;
+      width: 97%;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: white;
+      margin-bottom: 0px;
+      border: solid black;
+      padding: 10px;
+      border-radius: 15px;
+      z-index: 100;
+    }
+    .sticky {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #navbar nav {
+      text-align: center;
+      gap: 1rem;
+    }
+    #navbar nav ul {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      list-style: none;
+      justify-content: center;
+      margin: 0;
+      color: #f4f4f4;
+    }
+    #navbar nav a {
+      text-decoration: none;
+      gap: 1rem;
+      font-weight: bold;
+      color: black;
+      font-size: 18px;
+    }
+    #navbar nav a:hover {
+      color: red;
+    }
+    main {
+      background-color: #1c1c1c;
+      padding: 1.5rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: white;
+      border-radius: 30px;
+      border: solid black;
+    }
+
+    footer {
+      background-color: #1c1c1c;
+      padding: 0.5rem;
+      border: solid black;
+      color: white;
+      border-radius: 30px;
+      text-align: center;
+    }
+    table,
+    th,
+    td {
+      border: 1px solid;
+    }
+    .days {
+      font-weight: bold;
+    }
+    .Monday1 {
+      background-color: aqua;
+      color: black;
+    }
+
+    .Monday {
+      color: aqua;
+    }
+    .Tuesday1 {
+      background-color: yellow;
+      color: black;
+    }
+    .Tuesday {
+      color: yellow;
+    }
+    .Wednesday1 {
+      background-color: greenyellow;
+      color: black;
+    }
+    .Wednesday {
+      color: greenyellow;
+    }
+    .Thursday1 {
+      background-color: pink;
+      color: black;
+    }
+    .Thursday {
+      color: pink;
+    }
+    .Friday1 {
+      background-color: cornflowerblue;
+      color: black;
+    }
+    .Friday {
+      color: cornflowerblue;
+    }
+    .Saturday1 {
+      background-color: orange;
+      color: black;
+    }
+    .Saturday {
+      color: orange;
+    }
+    .Sunday1 {
+      background-color: rgb(249, 84, 172);
+      color: black;
+    }
+    .Sunday {
+      color: rgb(249, 84, 172);
+    }
+    @media only screen and (max-width: 300px) {
+      * {
+        box-sizing: border-box;
+      }
+    }
+  </style>
+  <script>
+    window.onscroll = function () {
+      myFunction();
+    };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+</html>
